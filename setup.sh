@@ -11,6 +11,11 @@ deactivate
 sudo apt-get python3-venv
 sudo apt-get install libblas-dev liblapack-dev
 sudo apt install cmake
+
+# libgpu array
+
+git clone https://github.com/Theano/libgpuarray.git
+cd libgpuarray
 cmake .. -DCMAKE_BUILD_TYPE=Release
 sudo make
 sudo make install
